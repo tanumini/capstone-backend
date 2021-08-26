@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Entity
@@ -22,11 +24,14 @@ private int id;
     private String username;
     private String password;
     private Long phoneno;
-    private String dob;
+    private Date dob;
     private String email;
     private String pancardno;
     private Long accountno;
-    private Long balance;
+    private String accounttype;
+    private String basecurrency;
+     private Map<String, Float> balance = new HashMap<String, Float>();
+//    private Long balance;
     private int pin;
 
 }
