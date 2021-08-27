@@ -13,10 +13,12 @@ spring:
     name: USER-SERVICE
   datasource:
     DriverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/capstone?useSSL=false
+    url: jdbc:mysql://localhost:3306/capstone?allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: Tanusimmu1709*
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+  zipkin:
+    base-url:
