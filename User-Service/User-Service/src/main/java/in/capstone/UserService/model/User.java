@@ -30,6 +30,15 @@ private int id;
     private Long accountno;
     private String accounttype;
     private String basecurrency;
+ private int  pin;
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
 
     public int getId() {
         return id;
@@ -127,19 +136,13 @@ private int id;
         this.basecurrency = basecurrency;
     }
 
-    public int getPin() {
-        return pin;
-    }
 
-    public void setPin(int pin) {
-        this.pin = pin;
-    }
 
     //    @ElementCollection
 //     private Map<String, Float> balance ;
 //    = new HashMap<String, Float>();
 //    private Long balance;
-    private int pin;
+
 
 
 }

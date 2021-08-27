@@ -33,6 +33,7 @@ public class UserService {
       User u=repository.findById(id).orElse(null);
      u.setAccounttype(user.getAccounttype());
      u.setBasecurrency(user.getBasecurrency());
+     u.setPin(user.getPin());
         final User updatedUser = repository.save(u);
         return ResponseEntity.ok(updatedUser);
     }
